@@ -1,0 +1,24 @@
+#mainBody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#controls {
+    display: inline-block;
+    justify-content: center;
+    margin: 15px 0 30px 0;
+}
+#container {
+    height: 600px;
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    border: solid black 0.5px;
+}
+
+#numberInput {
+    margin: 0 10px 0 10px;
+}
