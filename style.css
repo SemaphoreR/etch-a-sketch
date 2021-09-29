@@ -5,20 +5,71 @@
     flex-direction: column;
 }
 
+#mobile {
+  color: red;
+}
+
+@media only screen and (min-width: 600px) {
+  #mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #mobile {
+    display: block;
+    margin: 0 10px 0 10px;
+  }
+}
+
+#title {
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 4em;
+    margin: 20px 0 10px 0;
+}
+
+@media only screen and (min-width: 600px) {
+  #title {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #title {
+    font-size: 2em;
+  }
+}
+
 #controls {
     display: inline-block;
     justify-content: center;
-    margin: 15px 0 30px 0;
+    margin: 5px 0 30px 0;
 }
+
 #container {
-    height: 600px;
-    width: 600px;
     display: grid;
-    grid-template-columns: repeat(16, 1fr);
-    grid-template-rows: repeat(16, 1fr);
     border: solid black 0.5px;
+}
+
+@media only screen and (min-width: 600px) {
+    #container {
+        height: 600px;
+       width: 600px;
+       }
+}
+
+@media only screen and (max-width: 600px) {
+     #container {
+         height: 300px;
+        width: 300px;
+        }
 }
 
 #numberInput {
     margin: 0 10px 0 10px;
+    width: 100px;
+}
+
+.pixel {
+    background-color: black; opacity:0;
 }
